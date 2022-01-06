@@ -4,7 +4,7 @@
 This tutorial is licensed under a <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
 
 # Acknowledgements
-These instructions were based off of Dr. Noli Brazil's <a href="https://crd150.github.io/hw_guidelines.html#R_Markdown"> Assignment Guidelines for "CRD 150 - Quantitative Methods in Community Research." </a>
+These instructions were based off of Dr. Noli Brazil's <a href="https://crd150.github.io/hw_guidelines.html"> Assignment Guidelines for "CRD 150 - Quantitative Methods in Community Research." </a>
 
 # Introduction/Summary
 
