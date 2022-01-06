@@ -17,6 +17,24 @@ Markdown files should be submitted via Canvas by class time (1:59 PM) based on r
 
 You will use <a href="https://rmarkdown.rstudio.com/"> R Markdown </a> to write up all R related assignments. This guide will go through the steps for answering and submitting class assignment questions using R Markdown.
 
+# Grading
+
+In order to get full credit for each assignment, you will need to
+1. Show the correct results for a given question (e.g. table, statistics, visualization).
+2. Show the code producing the results.
+3. Provide thoughtful/correct written answers.
+
+Any response requiring a data analysis task must be supported by code you generate to produce your result. Just examining your various objects in the “Environment” section of R Studio is insufficient—you must use scripted commands. Because there are typically multiple ways to get an answer, we will not grade you on the efficiency of your code. You can work with other students but be sure to <strong>document/comment who you worked with in the assignments</strong>. However, you <strong>must submit your own assignments</strong>.
+
+Also note: all code used to produce your results must be shown in your HTML file (e.g., do not use ```echo=FALSE``` or ```include=FALSE``` as options anywhere). Other pieces of advice:
+
+- Some of the questions in the R Assignments ask for "correct" answers. That is not to say, however, that I will not take into consideration "how much" of the code is "correct." If the answer is "wrong," expect some points taken off. 
+- I will not grade on how efficient your code is unless stated so in the question. I will never take points off for accomplishing things differently than expected as long as it produces the correct result. <i>However</i>, if the answer is incorrect and your code indicates little effort (e.g. blank or a few lines of code that yield nothing), is completely incomprehensible (e.g. many lines of mish mash), and little to no commentary, expect few to no points.
+- Please submit <i>both</i> an Rmd and html file.
+
+The following page highlights instructions re: working with R Markdown (and how to produce ```.rmd``` and ```.html``` files).
+
+
 # R Markdown
 
 R Markdown is a simple formatting syntax for authoring html, pdf, and Microsoft Word documents in RStudio. 
@@ -318,9 +336,41 @@ Once again, <strong>treat the R Markdown file as a self-contained, stand alone s
 
 - Having problem with a line of R code?
 
+  - Did you install the appropriate package?
+  - Did you load in the appropriate library?
+  - Are you using the right function?
+  - Did you specify all the function’s arguments correctly?
 
+- Still having problems? Break up your code line by line or even argument by argument to find the error? For example, let’s say you have 4 lines of code that are connected together - i.e. line 4 depends on line 3, line 3 depends on line 2, and so on
 
+```R
+line 1 code
+line 2 code
+line 3 code
+line 4 code
+```
 
+If you get an error, run line 1 first. No error? Run line 1 and 2. No error? Keep going until you find the offending line.
+
+- If you have a Mac and you are getting an error when knitting, you may need to download the most recent version of XQuartz, which can be downloaded here
+- If you’re still stuck, more than likely someone else also had a similar problem in the past. So, ask a classmate. If your classmate is also stuck, use Google and it might help you out.
+
+# Summary
+The proper workflow for each assignment will be as follows
+
+1. Make sure you understand the material from lab/exploration day-related content.
+2. Create a folder on your hard drive that is specific to the assignment (e.g. Assignment 1, Assignment 2, etc.).
+3. Save the R Markdown assignment template linked to each assignment in the appropriate assignment folder on your hard drive.
+4. Download any data needed for the assignment into the same folder. For most assignments, I will upload the assignment data on GitHub, which you can directly link to in R, so you won’t have to download data.
+5. Open the R Markdown assignment file in RStudio.
+6. In the R Markdown document, answer the first assignment question.
+- Many of the questions will ask you to run code. Show that code in R Markdown chunks. Bottom line: Any code you used to get a result should be in your assignment. Otherwise, you will get points off, and for some questions, get all points off.
+  - Break up your code into different chunks where it makes sense. For some questions, you might include all code for a question in one single chunk. For other questions, you might break up the code into several chunks.
+  - Make sure your code works. Run code one chunk at a time to make sure it is working. Note that there are multiple ways to get to an answer in R. <strong>You  will not be grade on how efficient your code is unless stated so in the question</strong>.
+7. Most of the questions will ask you to explain your results. Write your explanations outside of the R code chunks. Please take these interpretation questions seriously!
+8. After you’ve completed the first question, knit to an html file. Make sure it knits properly. If it does not, examine the error, and fix the problem.
+9. If you’re satisfied with your code and its results for the first question, and the document properly knitted, move on to the next question. Repeat steps 6 and 7.
+10. Once you’ve completed all questions and successfully knitted, submit the ```.Rmd``` and ```.html``` files on Canvas before the designated due time.
 
 
 
