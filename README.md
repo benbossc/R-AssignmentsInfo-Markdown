@@ -264,3 +264,65 @@ When you’re satisfied with the end product, submit your ```.Rmd``` document an
 A major source of error for most new R Markdown users is that they call up a data object in their R Markdown file that has not been created within the R Markdown file. Treat the R Markdown as its own separate system - even if you’ve created an object through the R Console, and you can see it sitting in your Environment window, R Markdown won’t recognize it because it was not created within the R Markdown document.
 
 
+- A major source of error for most new R Markdown users is that they call up a data object in their R Markdown file that has not been created within the R Markdown file. Treat the R Markdown as its own separate system - even if you’ve created an object through the R Console, and you can see it sitting in your Environment window, R Markdown won’t recognize it because it was not created within the R Markdown document. 
+    
+To be clear, let’s say you typed directly in the R console the following code:
+  
+```{r}
+myobject <- 2
+```
+                      
+You see the object ```myobject``` pop up in your Environment window in the top right window. Let’s say you write in your R Markdown file the code:
+                      
+````{r}
+```{r}
+myobject*10
+```
+````
+                      
+You then click on ![image](https://user-images.githubusercontent.com/52055685/148442095-3a173ff6-c0fc-4d29-bee1-67777de07914.png) to knit. You will get an error because R will not be able to knit because <i>myobject</i> was not <strong>created within the R Markdown</strong>. Both lines of code should be in the R Markdown file as follows:
+         
+````{r}
+```{r}
+myobject <- 2
+
+myobject*10
+```
+````
+         
+Once again, <strong>treat the R Markdown file as a self-contained, stand alone script</strong>. This is an important concept to understand because many students get tripped up on it when first starting out.
+
+- Are you trying to bring in a data file that is not located in the directory your R Markdown is pointed to? Remember, don’t scatter your data files for an assignment across different folders. Keep them in one folder - the folder where your R Markdown document resides. To find your current working directory, type in ```getwd()``` in your console and press enter. To set your working directory, type in ```setwd("folder")``` in your console, replace <i>folder</i> with the <strong>entire</strong> path you want R to point to, and press enter/return. You can also set your working directory by clicking on Session -> Set Working Directory -> Choose Directory from the top menu.
+
+- Do you have an ````install.packages()```` in your R Markdown script? Take it out! You only need to do it once - and never inside an R Markdown script
+
+- Do you have a ```View()``` command in your R Markdown script? Take it out! Sometimes R Markdown will have problems when trying to view an R data object.
+
+- Are you using functions for a package that you need to load into R and haven’t loaded it in your R Markdown using ```library()```. If so, load it in R Markdown!
+
+- If you change a piece of code somewhere in the middle because you caught an error, make sure that change is reflected throughout the code. For example, let’s say you decide to rename the object <i>hisobject</i> to <i>herobject</i>. There may be code later on in the document that uses <i>hisobject</i>. So, you’ll need to change every line of code in your R Markdown that uses <i>hisobject</i> to now use <i>herobject</i>.
+
+- SPELLING, Spelling, spelling. Check your spelling. You created an object named <i>hisobject</i>, but you use it later in the file as <i>hsobject</i>. R will tell you that <i>hsobject</i> is not found. Another example: you used the function read_cvs() as opposed to the correct function ```read_csv()```.
+
+- R is case sensitive. The object <i>Money</i> is different from <i>money</i>.
+
+- R functions are sometimes finicky about spaces. They are also finicky about quotes. Some functions require quotes, others don’t.
+
+- Make sure that when you use brackets, parentheses or quotes, they should start and end with one. It is very rare that you will use a left parentheses and not close it with a right parentheses.
+
+- As I mentioned above, don’t wait till the last minute to knit. Knit after every question. Repeat it again: Knit after every question.
+
+- The first place to check when you get a knitting error is the specific chunk or line that the error is pointing to.
+
+- As I mentioned above, check if your R code works one chunk at a time.
+
+- Having problem with a line of R code?
+
+
+
+
+
+
+
+
+
