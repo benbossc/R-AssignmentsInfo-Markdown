@@ -24,7 +24,7 @@ In order to get full credit for each assignment, you will need to
 2. Show the code producing the results.
 3. Provide thoughtful/correct written answers.
 
-Any response requiring a data analysis task must be supported by code you generate to produce your result. Just examining your various objects in the “Environment” section of R Studio is insufficient—you must use scripted commands. Because there are typically multiple ways to get an answer, we will not grade you on the efficiency of your code. You can work with other students but be sure to <strong>document/comment who you worked with in the assignments AND/OR mention resources your used that were not provided by this class (i.e., a webpage, book chapter, etc.)</strong>. You <strong>must submit your own assignments</strong>.
+Any response requiring a data analysis task must be supported by code you generate to produce your result. Just examining your various objects in the “Environment” section of R Studio is insufficient—you must use scripted commands. Because there are typically multiple ways to get an answer, we will not grade you on the efficiency of your code. You can work with other students but be sure to <strong>document/comment who you worked with in the assignments AND/OR mention resources your used that were not provided by this class (i.e., a webpage, book chapter, etc.). You must submit your own assignments.</strong>
 
 Also note: all code used to produce your results must be shown in your HTML file (e.g., do not use ```echo=FALSE``` or ```include=FALSE``` as options anywhere). Other pieces of advice:
 
@@ -253,7 +253,7 @@ Fourth, you can highlight partly or entirely a line of code and use a keyboard s
 
 When you are testing your code, you might want to have the code results shown in your RStudio Console (the bottom left window) and plots/maps shown in the Plots window (bottom right window). To get RStudio to do this, select the “Tools” menu and select “Global Options”. Select “R Markdown” from the left-hand side and deselect the check box “Show output inline for all R Markdown documents”. The output from your code should now be shown in the console or Plots window.
 
-<img src = "fig/R-Markdown-fig2.jfif">
+<img src = "fig/R-Markdown-fig2.png">
 
 # Knitting an R Markdown document
 
