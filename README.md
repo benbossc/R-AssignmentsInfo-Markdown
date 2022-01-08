@@ -1,4 +1,4 @@
-# R-Markdown
+# R Assignments Instructions & R Markdown Tutorial
 
 <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license"><img style="border-width: 0;" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" alt="Creative Commons License" /></a>
 This tutorial is licensed under a <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
@@ -33,7 +33,6 @@ Also note: all code used to produce your results must be shown in your HTML file
 - Please submit <i>both</i> an Rmd and html file.
 
 The following page highlights instructions re: working with R Markdown (and how to produce ```.rmd``` and ```.html``` files).
-
 
 # R Markdown
 
