@@ -53,7 +53,7 @@ Once you’ve installed these packages, you don’t need to install them any mor
 
 # Opening an R Markdown File
 
-An ```.Rmd``` template will be provided for each assignment. Download the week’s assignment template, which will be linked at the top of every assignment, and save it into an appropriate folder on your hard drive. File management is important here. Here are some tips.
+An ```.Rmd``` template will be provided for each assignment. Download the week’s assignment template and save it into an appropriate folder on your hard drive. File management is important here. Here are some tips.
 
 1. Set up a clear and understandable hierarchical file system for this class on your hard drive. For example, create a class folder (MDSC 30100). Within this class folder, create the folder Assignments. Within the Assignments folder, create separate folders for each Assignment (e.g. Assignment 1, Assignment 2, …). Save that week’s assignment template here. When you knit your Rmd (we’ll get to what knitting means below), this is where your html file will go. Don’t work from your Desktop. Or from the Downloads folder. Or some randomly named folder that you will have a hard time finding a month, week or day from now.
 2. To open an .Rmd file in RStudio, select File -> Open File and navigate to the folder you saved the assignment template in and select the file. You should see the R Markdown file pop up on the top left portion of your RStudio interface like below.
